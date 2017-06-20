@@ -1,7 +1,13 @@
 # table-component
 
-__COMPONENT DESCRIPTION GOES HERE__
+  Uses - Enhancing fixed-data-table-2 Functionality. Example user faker to generate sample data.
 
+  This component renders given data in table format.
+  Functionality available -
+    1) Reordering columns
+    2) Add/Remove column data from table
+    3) Reset columns
+    4) Basic alphabetical search Functionality
 
 ## Demo & Examples
 
@@ -27,24 +33,26 @@ You can also use the standalone build by including `dist/table-component.js` in 
 npm install table-component --save
 ```
 
-
 ## Usage
-
-__EXPLAIN USAGE HERE__
 
 ```
 var TableComponent = require('table-component');
 
-<TableComponent>Example</TableComponent>
+<TableComponent width={500} height={600}
+      data={'size':1, _cache: ['firstName': 'Bob']},
+      columnTitles={'firstName': 'First Name'},
+      columnWidths:{'firstName': 150},
+      fixedColumns: ['firstName']
+  >
+</TableComponent>
 ```
 
 ### Properties
 
-* __DOCUMENT PROPERTIES HERE__
+
 
 ### Notes
 
-__ADDITIONAL USAGE NOTES__
 
 
 ## Development (`src`, `lib` and the build process)
@@ -54,7 +62,5 @@ __ADDITIONAL USAGE NOTES__
 To build, watch and serve the examples (which will also watch the component source), run `npm start`. If you just want to watch changes to `src` and rebuild `lib`, run `npm run watch` (this is useful if you are working with `npm link`).
 
 ## License
-
-__PUT LICENSE HERE__
 
 Copyright (c) 2017 Anjali Deshpande.

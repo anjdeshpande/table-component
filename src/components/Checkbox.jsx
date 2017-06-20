@@ -19,15 +19,6 @@ class Checkbox extends Component {
     handleCheckboxChange(name);
   }
 
-  //componentDidUpdate(prevProps, prevState) {
-    // only update chart if the data has changed
-  //  if (prevProps.checked !== this.props.checked) {
-  //    this.setState(({ isChecked }) => ({
-  //       isChecked: this.props.checked,
-  //    }));
-  //  }
-  //}
-
   render() {
     const { name, label, checked } = this.props;
     const { isChecked } = this.state;
