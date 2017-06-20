@@ -1,6 +1,5 @@
 import React, { PropTypes } from 'react';
 import FixedDataTable from 'fixed-data-table-2';
-import FakeObjectDataListStore from './helpers/FakeObjectDataListStore';
 import ExampleImage from './helpers/ExampleImage';
 import {TblColumns} from './TblColumns';
 
@@ -34,7 +33,7 @@ export default class List extends React.Component {
   constructor(props, context) {
     super(props, context);
 
-    this._dataList = new FakeObjectDataListStore(2000);
+    this._dataList = this.props.data;
     this.state = {
       filteredDataList: this._dataList,
       columnWidths: this.props.columnWidths,
@@ -203,6 +202,7 @@ export default class List extends React.Component {
 List.propTypes = {
   height: PropTypes.number,
   width: PropTypes.number,
+  data: PropTypes.object,
   columnTitles: PropTypes.object,
   columnWidths: PropTypes.object,
   fixedColumns: PropTypes.array

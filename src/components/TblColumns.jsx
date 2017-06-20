@@ -39,17 +39,18 @@ export class TblColumns extends React.Component {
     });
   }
 
-  //componentDidUpdate(prevProps, prevState) {
+  componentDidUpdate(prevProps, prevState) {
     // only update chart if the data has changed
-  //  if (prevProps.colOrder !== this.props.colOrder) {
+    if (prevProps.colOrder !== this.props.colOrder) {
   //    var removeList = prevProps.colOrder.filter((item) => {
   //      return this.props.colOrder.indexOf(item) == -1;
   //    });
   //    if (removeList.length > 0) {
   //      this.toggleCheckbox(removeList[0]);
   //    }
-  //  }
-  //}
+      this.toggleColumnArea();
+    }
+  }
 
   render() {
     let keyNames = Object.keys(this.props.cols);
@@ -59,7 +60,7 @@ export class TblColumns extends React.Component {
     return (
       <div className='tbl-columns'>
         <div className='tbl-header' onClick={this.toggleColumnArea}> Show/Hide Columns </div>
-        { this.state.showColArea && keyNames.map(function(keyName, keyIndex) {
+        { this.state.showColArea && colOrder && keyNames.map(function(keyName, keyIndex) {
             return (
               <Checkbox
                     name={keyName}
