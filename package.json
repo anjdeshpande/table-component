@@ -1,0 +1,46 @@
+{
+  "name": "table-component",
+  "version": "1.0.0",
+  "description": "table-component",
+  "main": "lib/index.js",
+  "author": {
+    "name": "Anjali Deshpande",
+    "url": "https://github.com/anjalideshpande"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/walmartlabs/table-component.git"
+  },
+  "bugs": {
+    "url": "https://github.com/walmartlabs/table-component/issues"
+  },
+  "homepage": "https://github.com/walmartlabs/table-component",
+  "dependencies": {
+    "faker": "^4.1.0",
+    "fixed-data-table-2": "^0.7.17",
+    "react-container-dimensions": "^1.3.2",
+    "react-redux": "^5.0.5",
+    "react-tooltip": "^3.3.0",
+    "redux": "^3.7.0"
+  },
+  "devDependencies": {
+    "electrode-archetype-react-component": "^1.0.0",
+    "electrode-archetype-react-component-dev": "^1.0.0",
+    "gulp": "^3.9.1"
+  },
+  "engines": {
+    "node": "^4.2.6",
+    "npm": "^3.5.3"
+  },
+  "scripts": {
+    "prepublish": "gulp prepublish",
+    "start": "gulp demo",
+    "test": "gulp check"
+  },
+  "keywords": [
+    "react",
+    "electrode",
+    "electrode-component",
+    "react-component"
+  ]
+}

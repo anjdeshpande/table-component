@@ -1,0 +1,324 @@
+{
+  "library": "table-component",
+  "description": "table-component",
+  "components": [
+    {
+      "description": "",
+      "methods": [
+        {
+          "name": "toggleCheckbox",
+          "docblock": null,
+          "modifiers": [],
+          "params": [
+            {
+              "name": "label",
+              "type": null
+            }
+          ],
+          "returns": null
+        },
+        {
+          "name": "toggleColumnArea",
+          "docblock": null,
+          "modifiers": [],
+          "params": [],
+          "returns": null
+        }
+      ],
+      "props": {
+        "cols": {
+          "type": {
+            "name": "object"
+          },
+          "required": true,
+          "description": ""
+        },
+        "colOrder": {
+          "type": {
+            "name": "array"
+          },
+          "required": false,
+          "description": ""
+        },
+        "onChange": {
+          "type": {
+            "name": "func"
+          },
+          "required": false,
+          "description": ""
+        }
+      },
+      "fileName": "./src/components/TblColumns.jsx",
+      "hasProps": true
+    },
+    {
+      "description": "",
+      "displayName": "TableComponent",
+      "methods": [],
+      "props": {
+        "width": {
+          "type": {
+            "name": "number"
+          },
+          "required": false,
+          "defaultValue": {
+            "value": "800",
+            "computed": false
+          },
+          "description": ""
+        },
+        "height": {
+          "type": {
+            "name": "number"
+          },
+          "required": false,
+          "defaultValue": {
+            "value": "500",
+            "computed": false
+          },
+          "description": ""
+        },
+        "columnTitles": {
+          "type": {
+            "name": "object"
+          },
+          "required": false,
+          "defaultValue": {
+            "value": "{\n  'firstName': 'First Name',\n  'lastName': 'Last Name',\n  'city': 'City',\n  'sentence': 'Sentence',\n  'street': 'Street',\n  'companyName': 'Company Name',\n  'zipCode': 'Zip Code'\n}",
+            "computed": false
+          },
+          "description": ""
+        },
+        "columnWidths": {
+          "type": {
+            "name": "object"
+          },
+          "required": false,
+          "defaultValue": {
+            "value": "{\n  'firstName': 150,\n  'lastName': 150,\n  'city': 150,\n  'sentence': 240,\n  'street': 150,\n  'companyName': 200,\n  'zipCode': 100\n}",
+            "computed": false
+          },
+          "description": ""
+        },
+        "fixedColumns": {
+          "type": {
+            "name": "array"
+          },
+          "required": false,
+          "defaultValue": {
+            "value": "[\n  'firstName',\n  'lastName'\n]",
+            "computed": false
+          },
+          "description": ""
+        }
+      },
+      "fileName": "./src/components/table-component.jsx",
+      "hasProps": true
+    },
+    {
+      "description": "",
+      "methods": [
+        {
+          "name": "_onColumnResizeEndCallback",
+          "docblock": null,
+          "modifiers": [],
+          "params": [
+            {
+              "name": "newColumnWidth",
+              "type": null
+            },
+            {
+              "name": "columnKey",
+              "type": null
+            }
+          ],
+          "returns": null
+        },
+        {
+          "name": "_onFilterChange",
+          "docblock": null,
+          "modifiers": [],
+          "params": [
+            {
+              "name": "e",
+              "type": null
+            }
+          ],
+          "returns": null
+        },
+        {
+          "name": "_handleColumnHide",
+          "docblock": null,
+          "modifiers": [],
+          "params": [
+            {
+              "name": "columnKey",
+              "type": null
+            }
+          ],
+          "returns": null
+        },
+        {
+          "name": "_resetColumns",
+          "docblock": null,
+          "modifiers": [],
+          "params": [],
+          "returns": null
+        },
+        {
+          "name": "_resetColumn",
+          "docblock": null,
+          "modifiers": [],
+          "params": [
+            {
+              "name": "colName",
+              "type": null
+            }
+          ],
+          "returns": null
+        },
+        {
+          "name": "_onColumnReorderEndCallback",
+          "docblock": null,
+          "modifiers": [],
+          "params": [
+            {
+              "name": "event",
+              "type": null
+            }
+          ],
+          "returns": null
+        },
+        {
+          "name": "_onChangeCols",
+          "docblock": null,
+          "modifiers": [],
+          "params": [
+            {
+              "name": "cols",
+              "type": null
+            }
+          ],
+          "returns": null
+        },
+        {
+          "name": "updateState",
+          "docblock": null,
+          "modifiers": [],
+          "params": [
+            {
+              "name": "columns",
+              "type": null
+            }
+          ],
+          "returns": null
+        }
+      ],
+      "props": {
+        "height": {
+          "type": {
+            "name": "number"
+          },
+          "required": false,
+          "description": ""
+        },
+        "width": {
+          "type": {
+            "name": "number"
+          },
+          "required": false,
+          "description": ""
+        },
+        "columnTitles": {
+          "type": {
+            "name": "object"
+          },
+          "required": false,
+          "description": ""
+        },
+        "columnWidths": {
+          "type": {
+            "name": "object"
+          },
+          "required": false,
+          "description": ""
+        },
+        "fixedColumns": {
+          "type": {
+            "name": "array"
+          },
+          "required": false,
+          "description": ""
+        }
+      },
+      "fileName": "./src/components/List.jsx",
+      "hasProps": true
+    },
+    {
+      "description": "",
+      "methods": [],
+      "props": {
+        "message": {
+          "type": {
+            "name": "string"
+          },
+          "required": false,
+          "description": ""
+        },
+        "user": {
+          "type": {
+            "name": "object"
+          },
+          "required": false,
+          "description": ""
+        }
+      },
+      "fileName": "./src/components/Hello.jsx",
+      "hasProps": true
+    },
+    {
+      "description": "",
+      "methods": [
+        {
+          "name": "toggleCheckboxChange",
+          "docblock": null,
+          "modifiers": [],
+          "params": [],
+          "returns": null
+        }
+      ],
+      "props": {
+        "name": {
+          "type": {
+            "name": "string"
+          },
+          "required": true,
+          "description": ""
+        },
+        "label": {
+          "type": {
+            "name": "string"
+          },
+          "required": true,
+          "description": ""
+        },
+        "checked": {
+          "type": {
+            "name": "bool"
+          },
+          "required": true,
+          "description": ""
+        },
+        "handleCheckboxChange": {
+          "type": {
+            "name": "func"
+          },
+          "required": true,
+          "description": ""
+        }
+      },
+      "fileName": "./src/components/Checkbox.jsx",
+      "hasProps": true
+    }
+  ]
+}
