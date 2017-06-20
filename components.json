@@ -256,28 +256,6 @@
     },
     {
       "description": "",
-      "methods": [],
-      "props": {
-        "message": {
-          "type": {
-            "name": "string"
-          },
-          "required": false,
-          "description": ""
-        },
-        "user": {
-          "type": {
-            "name": "object"
-          },
-          "required": false,
-          "description": ""
-        }
-      },
-      "fileName": "./src/components/Hello.jsx",
-      "hasProps": true
-    },
-    {
-      "description": "",
       "methods": [
         {
           "name": "toggleCheckboxChange",

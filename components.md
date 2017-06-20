@@ -75,25 +75,6 @@ import  from "table-component";
 
 | Property | Type | Description | Default |
 | -------- | ---- | ----------- | ------- |
-| *message* | string |  | 
-| *user* | object |  | 
-
-### import
-
-```jsx
-import  from "table-component";
-```
-
-<hr/>
-
-## 
-
-
-
-### Properties
-
-| Property | Type | Description | Default |
-| -------- | ---- | ----------- | ------- |
 | *name* | string |  | 
 | *label* | string |  | 
 | *checked* | bool |  | 

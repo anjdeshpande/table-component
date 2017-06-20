@@ -162,11 +162,8 @@ export default class List extends React.Component {
       <div className="listData">
         <div className="tblActions">
           <input
-            className="filter"
-            onChange={this._onFilterChange}
-            placeholder="Filter by First Name, Last Name, City, Street or Company Name"
-            width={300}
-          />
+            className="filter" placeholder="Filter records" width={500}
+            onChange={this._onFilterChange}/>
           <button className="resetCols" onClick={this._resetColumns}>Reset Columns</button>
         </div>
 

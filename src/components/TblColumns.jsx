@@ -57,8 +57,8 @@ export class TblColumns extends React.Component {
     let colOrder = this.props.colOrder;
     let toggleCheckbox = this.toggleCheckbox;
     return (
-      <div>
-        <div onClick={this.toggleColumnArea}> Show/Hide Columns </div>
+      <div className='tbl-columns'>
+        <div className='tbl-header' onClick={this.toggleColumnArea}> Show/Hide Columns </div>
         { this.state.showColArea && keyNames.map(function(keyName, keyIndex) {
             return (
               <Checkbox

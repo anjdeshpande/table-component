@@ -14,7 +14,6 @@ export default class TableComponent extends React.Component {
   render() {
     return (
       <div>
-        <FormattedMessage {...messages.editMe} />
         <List width={this.props.width} height={this.props.height}
               columnTitles={this.props.columnTitles} columnWidths={this.props.columnWidths}
               fixedColumns={this.props.fixedColumns}/>
